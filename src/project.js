@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import { TodoItem } from "./todoItem";
-class Project {
+export class Project {
     constructor(title){
         this.title = title;
 

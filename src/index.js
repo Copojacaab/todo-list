@@ -1,3 +1,5 @@
-import { TodoItem } from "./todoItem";
+import todoManager from "./todoManager";
 
-console.log('pippo');
+todoManager.initialize();
+
+console.log(todoManager.getAllProjects());
