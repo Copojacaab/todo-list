@@ -1,4 +1,4 @@
-const { nanoid } = require('nanoid');
+import { nanoid } from "nanoid";
 
 class TodoItem {
 
@@ -44,8 +44,5 @@ console.log("[TEST] id univoco ", myTodo.id);
 myTodo.toggleComplete();
 console.log("[TEST] dopo il toggle dello stato ", myTodo.isComplete);
 
-module.exports = {
-    TodoItem: TodoItem,
-    nanoid: nanoid
-};
+export { TodoItem };
 

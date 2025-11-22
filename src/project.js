@@ -1,6 +1,5 @@
-const { nanoid } = require('nanoid');
-const { TodoItem } = require('./todoItem.js');
-
+import { nanoid } from "nanoid";
+import { TodoItem } from "./todoItem";
 class Project {
     constructor(title){
         this.title = title;
