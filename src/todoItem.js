@@ -22,6 +22,13 @@ class TodoItem {
         return nanoid();
     }
 
+    // ========================
+    //      Getters and Setters
+    // =======================
+
+    setId(newId){
+        this.id = newId;
+    }
 }
 
 // ====================================================

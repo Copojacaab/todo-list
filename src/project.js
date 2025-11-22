@@ -37,6 +37,11 @@ export class Project {
         return null;
     }
 
+
+
+    // =======================================
+    //              GETTERS AND SETTERS
+    // =======================================
     getTodo(todoId){
         const indexSearched = this.todos.findIndex((todo) => todo.id === todoId);
         return this.todos[indexSearched];
@@ -45,6 +50,10 @@ export class Project {
     // metodo per id univoci
     generateUniqueId(){
         return nanoid();
+    }
+
+    setId(newId) {
+        this.id = newId;
     }
 }
 
